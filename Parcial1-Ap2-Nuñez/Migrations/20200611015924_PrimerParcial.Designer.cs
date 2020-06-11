@@ -8,7 +8,7 @@ using Parcial1_Ap2_Nuñez.DAL;
 namespace Parcial1_Ap2_Nuñez.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20200611004323_PrimerParcial")]
+    [Migration("20200611015924_PrimerParcial")]
     partial class PrimerParcial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,8 +34,8 @@ namespace Parcial1_Ap2_Nuñez.Migrations
                     b.Property<int>("Existencia")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("ValorInventario")
-                        .HasColumnType("INTEGER");
+                    b.Property<decimal>("ValorInventario")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("ArticulosId");
 

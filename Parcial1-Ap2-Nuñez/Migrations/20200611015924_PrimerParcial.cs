@@ -15,7 +15,7 @@ namespace Parcial1_Ap2_Nuñez.Migrations
                     Descripcion = table.Column<string>(maxLength: 200, nullable: false),
                     Existencia = table.Column<int>(nullable: false),
                     Costo = table.Column<decimal>(nullable: false),
-                    ValorInventario = table.Column<int>(nullable: false)
+                    ValorInventario = table.Column<decimal>(nullable: false)
                 },
                 constraints: table =>
                 {

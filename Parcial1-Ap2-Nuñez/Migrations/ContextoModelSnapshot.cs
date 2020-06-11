@@ -32,8 +32,8 @@ namespace Parcial1_Ap2_Nuñez.Migrations
                     b.Property<int>("Existencia")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("ValorInventario")
-                        .HasColumnType("INTEGER");
+                    b.Property<decimal>("ValorInventario")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("ArticulosId");
 

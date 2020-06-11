@@ -41,7 +41,7 @@
                 </div>
                 <div class="form-group">
                     <label>Valor Inventario</label>
-                    <InputNumber @bind-Value="producto.ValorInventario" class="form-control"/>
+                    <InputNumber @bind-Value="producto.ValorInventario"  @oninput="ValorInventario" ReadOnly="true" class="form-control"/>
                     <ValidationMessage For="@(()=>producto.ValorInventario)"></ValidationMessage>
                 </div>
             </form>
@@ -119,7 +119,7 @@
 
     public void ValorInventario()
     {
-        var total = producto.Costo * producto.Existencia;
+       producto.ValorInventario = Convert.ToInt32(producto.Costo) * producto.Existencia;
     }
 
 }
