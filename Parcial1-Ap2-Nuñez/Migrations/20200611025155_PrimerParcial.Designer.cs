@@ -8,7 +8,7 @@ using Parcial1_Ap2_Nuñez.DAL;
 namespace Parcial1_Ap2_Nuñez.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20200611015924_PrimerParcial")]
+    [Migration("20200611025155_PrimerParcial")]
     partial class PrimerParcial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
