@@ -1,0 +1,39 @@
+﻿@page "/ConsultaProductos";
+@using Parcial1_Ap2_Nuñez.BLL;
+@using Parcial1_Ap2_Nuñez.Models;
+
+    <table class="table">
+        
+        <thead>
+
+            <tr>
+                <th>Id</th>
+                <th>Descripcion</th>
+                <th>Existencia</th>
+                <th>Costo</th>
+                <th>Valor Existencia</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in lista)
+            {
+                <tr>
+                    <th>@item.ArticulosId</th>
+                    <th>@item.Descripcion</th>
+                    <th>@item.Existencia</th>
+                    <th>@item.Costo</th>
+                    <th>@item.ValorInventario</th>
+                </tr>
+            }
+        </tbody>
+    </table>
+@code {
+    public List<Producto> lista = new List<Producto>();
+
+
+    protected override void OnInitialized()
+    {
+        
+        lista = ProductoBLL.GetList(p => true);
+    }
+}

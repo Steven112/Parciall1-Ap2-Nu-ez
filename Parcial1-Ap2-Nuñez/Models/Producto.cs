@@ -11,7 +11,7 @@ namespace Parcial1_Ap2_Nuñez.Models
     {
         [Key]
         [Required(ErrorMessage ="Debe de llenar el campo")]
-        [Range(1,9999999,ErrorMessage ="El id debe de ser mayor a 0 y menor a 9999999")]
+        [Range(0,9999999,ErrorMessage ="El id debe de ser mayor a 0 y menor a 9999999")]
         public int ArticulosId { get; set; }
 
 
