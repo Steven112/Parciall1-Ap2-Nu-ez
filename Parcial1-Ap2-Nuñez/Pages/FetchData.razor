@@ -2,7 +2,7 @@
 
 @using Parcial1_Ap2_Nuñez.Data
 @inject WeatherForecastService ForecastService
-@inject IToastService toast
+@*@inject IToastService toast*@
 
 <h1>Weather forecast</h1>
 
@@ -35,7 +35,7 @@ else
             }
         </tbody>
     </table>
-   // <button class="btn btn-success" @onclick="@(() => toastService.ShowSuccess("I'm a SUCCESS message with a custom title", "Congratulations!"))">Success Toast</button>
+    // <button class="btn btn-success" @onclick="@(() => toastService.ShowSuccess("I'm a SUCCESS message with a custom title", "Congratulations!"))">Success Toast</button>
 }
 
 @code {
