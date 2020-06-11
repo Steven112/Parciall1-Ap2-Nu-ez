@@ -51,6 +51,8 @@ namespace Parcial1_Ap2_Nuñez.BLL
 
             try
             {
+                
+              
                 contexto.Entry(producto).State = EntityState.Modified;
                 paso = contexto.SaveChanges() > 0;
             }
