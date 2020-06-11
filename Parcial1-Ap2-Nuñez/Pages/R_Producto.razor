@@ -50,7 +50,7 @@
             <div class="form-group text-center" display: inline-block>
                 <button type="button" class="btn btn-primary" @onclick="Nuevo">Nuevo</button>
                 <button type="submit" class="btn btn-success" >Guardar</button>
-                <button type="button" class="btn btn-danger" @onclick="Nuevo">Eliminar</button>
+                <button type="button" class="btn btn-danger" @onclick="Eliminar">Eliminar</button>
             </div>
 
         </div>
@@ -63,7 +63,8 @@
 
     protected override void OnInitialized()
     {
-
+        Nuevo();
+        Buscar();
     }
     public void Nuevo()
     {
