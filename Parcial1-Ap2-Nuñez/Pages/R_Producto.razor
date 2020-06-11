@@ -31,12 +31,12 @@
                 </div>
                 <div class="form-group">
                     <label>Existencia</label>
-                    <InputNumber @bind-Value="producto.Existencia" class="form-control" />
+                    <InputNumber @bind-Value="producto.Existencia"  class="form-control" />
                     <ValidationMessage For="@(()=>producto.Existencia)"></ValidationMessage>
                 </div>
                 <div class="form-group">
                     <label>Costo</label>
-                    <InputNumber @bind-Value="producto.Costo" class="form-control" />
+                    <InputNumber @bind-Value="producto.Costo"  @oninput="ValorInventario" @onfocus="ValorInventario" @onfocusout="ValorInventario"class="form-control" />
                     <ValidationMessage For="@(()=>producto.Costo)"></ValidationMessage>
                 </div>
                 <div class="form-group">
