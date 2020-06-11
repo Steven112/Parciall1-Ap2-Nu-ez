@@ -23,7 +23,7 @@ namespace Parcial1_Ap2_Nuñez.Models
         public int Existencia { get; set; }
         [Required(ErrorMessage = "Debe de llenar el campo")]
         public decimal Costo { get; set; }
-        public decimal ValorInventario { get; set; }
+        public int ValorInventario { get; set; }
 
         public Producto()
         {
